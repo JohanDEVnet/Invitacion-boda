@@ -1,0 +1,74 @@
+{
+  "hero": {
+    "subtitle": "WITH LOVE AND GRATITUDE",
+    "invite": "WE INVITE YOU TO CELEBRATE",
+    "title": "OUR UNION",
+    "cursiveTitle": "Shamanic Wedding Ceremony",
+    "tagline": "United in love, spirit, and purpose",
+    "date": "SATURDAY · SEPTEMBER 25 · 2027"
+  },
+  "quote": {
+    "text": "Two souls that choose each other every day to walk together with love, respect, and purpose. We honor our roots, nature, and spirit, and today we decide to unite our paths in commitment and ceremony.",
+    "author": "— Spirit of the Amazon"
+  },
+  "story": {
+    "intro": "We are Jason and María",
+    "title": "Our Story",
+    "description": "A sacred place where the river embraces the jungle and the spirit of nature guides us. We unite our lives in this site of profound power, giving thanks to Pachamama, the medicine teachers, and all the beings who accompany us on this path.",
+    "mariaTitle": "María",
+    "mariaDesc": "From Ica, she arrived in Tarapoto and found her home in the jungle, where the connection with Ayahuasca and nature became part of her daily life and soul.",
+    "jasonTitle": "Jason",
+    "jasonDesc": "Ayahuasca healer (maestro), ceremony and healing guide, who has dedicated his life to serving with love, humility, and respect to the medicine and the community.",
+    "jointSpace": "Together we have created a sacred space in Estero del Río Mayo for ceremonies, healing, and transformation."
+  },
+  "ceremony": {
+    "title": "The Ceremony",
+    "subtitle": "Our Sacred Day",
+    "dateTitle": "Date",
+    "dateDesc": "Saturday, September 25, 2027",
+    "dateDetail": "Shamanic Ceremony · Union Ritual & Celebration",
+    "timeTitle": "Time",
+    "timeDesc": "9:30 AM",
+    "timeDetail": "Arrival and spiritual preparation starting from 9:00 AM",
+    "locationTitle": "Sacred Place",
+    "locationDesc": "Playa de Estero del Río Mayo",
+    "locationDetail": "Tarapoto, San Martín, Peru",
+    "dressTitle": "Dress Code",
+    "dressDesc": "Bohemian Ceremonial",
+    "dressDetail": "Earth tones · Cream · Gold · Emerald green",
+    "dressWarning": "Flowy fabrics · No dark colors, please",
+    "giftNote": "We would love to share this sacred moment with you. Your presence is our greatest gift."
+  },
+  "countdown": {
+    "title": "Time until Union",
+    "subtitle": "Sacred Count",
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds"
+  },
+  "elements": {
+    "title": "Sacred Elements",
+    "subtitle": "Plants of Power",
+    "ayahuascaName": "Ayahuasca Vine",
+    "ayahuascaDesc": "Bridge between worlds, ancestral wisdom, and healing.",
+    "chacrunaName": "Chacruna Leaves",
+    "chacrunaDesc": "Protection, clarity, and vision of the heart.",
+    "bobinsanaName": "Bobinsana Flower",
+    "bobinsanaDesc": "Heart opening, sweetness, and true love. Calm your mind, open your heart."
+  },
+  "rsvp": {
+    "title": "RSVP",
+    "subtitle": "Will you join us?",
+    "nameLabel": "Guest Name",
+    "namePlaceholder": "Write your first and last name",
+    "attendanceLabel": "Do you confirm your attendance?",
+    "yes": "Yes, I will attend with love",
+    "no": "No, I cannot attend, I will be with you in spirit",
+    "guestsLabel": "Number of guests (including yourself)",
+    "messageLabel": "Special message (optional)",
+    "messagePlaceholder": "Dietary restrictions, blessing, or greeting...",
+    "submit": "Send Confirmation via WhatsApp",
+    "whatsappTextTemplate": "Hello Jason and María! I confirm my attendance at your Shamanic Wedding Ceremony. Name: {name}. Attendance: {attendance}. Message: {message}"
+  }
+}

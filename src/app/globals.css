@@ -1,0 +1,310 @@
+@import "tailwindcss";
+
+:root {
+  --color-cream: #FAF9F6;
+  --color-cream-dark: #F0EDE6;
+  --color-forest: #0D2A14;
+  --color-forest-light: #1A4B23;
+  --color-gold: #E8C86B;
+  --color-gold-soft: #C5A85A;
+  --color-amber: #FF9F43;
+  --color-charcoal: #E5E9E6; /* Off-white for high legibility on dark background */
+  --color-dark-bg: #040905;  /* Deep night forest background */
+  --font-heading: "Cinzel", serif;
+  --font-script: "Alex Brush", cursive;
+  --font-body: "Cormorant Garamond", serif;
+}
+
+@theme inline {
+  --color-background: var(--color-dark-bg);
+  --color-foreground: var(--color-charcoal);
+  --font-sans: var(--font-body);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-dark-bg);
+  color: var(--color-charcoal);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Subtle organic noise texture overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.02;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+}
+
+/* 3D Perspective & Layout */
+.perspective-container {
+  perspective: 1200px;
+  transform-style: preserve-3d;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+/* Shamanic Glowing Lights (Ambient background colors) */
+.glow-green {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(26, 75, 35, 0.25) 0%, transparent 70%);
+  filter: blur(60px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.glow-amber {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 159, 67, 0.12) 0%, transparent 70%);
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Gold separator line */
+.gold-line {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+  margin: 0 auto;
+}
+
+.gold-line-wide {
+  width: 120px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+  margin: 0 auto;
+}
+
+/* Gold diamond ornament */
+.gold-diamond {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: var(--color-gold);
+  transform: rotate(45deg);
+}
+
+/* Dark Shamanic Glass Card */
+.glass-card {
+  background: rgba(10, 24, 14, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(232, 200, 107, 0.18);
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  transform-style: preserve-3d;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  border-color: rgba(232, 200, 107, 0.4);
+  box-shadow: 0 15px 40px -5px rgba(232, 200, 107, 0.08);
+}
+
+/* Section spacing */
+.section-spacing {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+/* Keyframes & Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out both;
+}
+
+/* Gold Pulse */
+@keyframes goldPulse {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+}
+
+.animate-gold-pulse {
+  animation: goldPulse 4s ease-in-out infinite;
+}
+
+/* Shamanic Yin Yang slow rotation */
+@keyframes slowRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-slow-rotate {
+  animation: slowRotate 45s linear infinite;
+}
+
+/* Firefly floating animation */
+@keyframes floatFirefly {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(-80px) translateX(30px);
+    opacity: 0.9;
+  }
+  80% {
+    opacity: 0.4;
+  }
+  95% {
+    opacity: 0;
+  }
+}
+
+/* Shimmer shine animation */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 6s ease-in-out infinite;
+}
+
+/* Google Map Dark Theme Filter */
+.dark-map-container iframe {
+  filter: invert(90%) hue-rotate(180deg) brightness(85%) contrast(95%);
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.dark-map-container:hover iframe {
+  opacity: 0.95;
+}
+
+/* Moon Glow Animation */
+@keyframes moonGlow {
+  0%, 100% {
+    opacity: 0.7;
+    filter: drop-shadow(0 0 6px rgba(232, 200, 107, 0.4));
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    filter: drop-shadow(0 0 18px rgba(232, 200, 107, 0.8));
+    transform: scale(1.05);
+  }
+}
+
+.animate-moon-glow {
+  animation: moonGlow 4s ease-in-out infinite;
+}
+
+/* Gold Text Glow Animation */
+@keyframes textGlow {
+  0%, 100% {
+    text-shadow: 0 0 5px rgba(232, 200, 107, 0.45), 0 0 10px rgba(232, 200, 107, 0.15);
+  }
+  50% {
+    text-shadow: 0 0 14px rgba(232, 200, 107, 0.85), 0 0 25px rgba(232, 200, 107, 0.5), 0 0 35px rgba(232, 200, 107, 0.2);
+  }
+}
+
+.animate-text-glow {
+  animation: textGlow 3.5s ease-in-out infinite;
+}
+
+/* White Text Glow Animation */
+@keyframes whiteTextGlow {
+  0%, 100% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.35), 0 0 10px rgba(255, 255, 255, 0.15);
+  }
+  50% {
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.75), 0 0 20px rgba(255, 255, 255, 0.4), 0 0 30px rgba(255, 255, 255, 0.15);
+  }
+}
+
+.animate-white-glow {
+  animation: whiteTextGlow 4s ease-in-out infinite;
+}
+
+/* Twinkle Stars Animation */
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.15;
+    transform: scale(0.85);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+}
+
+.animate-twinkle {
+  animation: twinkle 4s ease-in-out infinite;
+}
+
+/* Custom scrollbar matching gold theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-dark-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold-soft);
+  border-radius: 4px;
+  border: 2px solid var(--color-dark-bg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold);
+}
+
+/* Text Selection */
+::selection {
+  background: rgba(232, 200, 107, 0.35);
+  color: var(--color-dark-bg);
+}

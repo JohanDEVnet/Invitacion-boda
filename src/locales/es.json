@@ -1,0 +1,74 @@
+{
+  "hero": {
+    "subtitle": "CON AMOR Y GRATITUD",
+    "invite": "TE INVITAMOS A CELEBRAR",
+    "title": "NUESTRA UNIÓN",
+    "cursiveTitle": "Matrimonial Chamánica",
+    "tagline": "Unidos en amor, en espíritu y en propósito",
+    "date": "SÁBADO · 25 · SEPTIEMBRE · 2027"
+  },
+  "quote": {
+    "text": "Dos almas que se eligen cada día para caminar juntas con amor, respeto y propósito. Honramos nuestras raíces, la naturaleza y el espíritu, y hoy decidimos unir nuestros caminos en compromiso y ceremonia.",
+    "author": "— Espíritu de la Amazonia"
+  },
+  "story": {
+    "intro": "Somos Jason y María",
+    "title": "Nuestra Historia",
+    "description": "Un lugar sagrado donde el río abraza la selva y el espíritu de la naturaleza nos guía. Unimos nuestras vidas en este sitio de profundo poder, agradeciendo a la Pachamama, a los maestros de la medicina y a todos los seres que nos acompañan en este camino.",
+    "mariaTitle": "María",
+    "mariaDesc": "Desde Ica, llegó a Tarapoto y encontró en la selva su hogar, donde la conexión con la Ayahuasca y la naturaleza se volvió parte de su vida diaria y de su alma.",
+    "jasonTitle": "Jason",
+    "jasonDesc": "Maestro ayahuasquero, guía de ceremonias y sanación, quien ha dedicado su vida a servir con amor, humildad y respeto a la medicina y a la comunidad.",
+    "jointSpace": "Juntos hemos creado un espacio sagrado en Estero del Río Mayo para ceremonias, sanación y transformación."
+  },
+  "ceremony": {
+    "title": "La Ceremonia",
+    "subtitle": "Nuestro Día Sagrado",
+    "dateTitle": "Fecha",
+    "dateDesc": "Sábado, 25 de Septiembre de 2027",
+    "dateDetail": "Ceremonia Chamánica · Ritual de Unión y Celebración",
+    "timeTitle": "Hora",
+    "timeDesc": "9:30 AM",
+    "timeDetail": "Llegada y preparación espiritual desde las 9:00 AM",
+    "locationTitle": "Lugar Sagrado",
+    "locationDesc": "Playa de Estero del Río Mayo",
+    "locationDetail": "Tarapoto, San Martín, Perú",
+    "dressTitle": "Vestimenta",
+    "dressDesc": "Ceremonial Bohemio",
+    "dressDetail": "Tonos tierra · Crema · Dorado · Verde esmeralda",
+    "dressWarning": "Telas fluidas · Sin colores oscuros, por favor",
+    "giftNote": "Nos encantaría compartir este momento sagrado contigo. Tu presencia es nuestro mayor regalo."
+  },
+  "countdown": {
+    "title": "Tiempo para la Unión",
+    "subtitle": "Cuenta Sagrada",
+    "days": "Días",
+    "hours": "Horas",
+    "minutes": "Minutos",
+    "seconds": "Segundos"
+  },
+  "elements": {
+    "title": "Elementos Sagrados",
+    "subtitle": "Plantas de Poder",
+    "ayahuascaName": "Liana de Ayahuasca",
+    "ayahuascaDesc": "Puente entre mundos, sabiduría ancestral y sanación.",
+    "chacrunaName": "Hojas de Chacruna",
+    "chacrunaDesc": "Protección, claridad y visión del corazón.",
+    "bobinsanaName": "Flor de Bobinsana",
+    "bobinsanaDesc": "Apertura del corazón, dulzura y amor verdadero. Calma tu mente, abre tu corazón."
+  },
+  "rsvp": {
+    "title": "Confirmación",
+    "subtitle": "¿Nos acompañas?",
+    "nameLabel": "Nombre del Invitado",
+    "namePlaceholder": "Escribe tu nombre y apellido",
+    "attendanceLabel": "¿Confirmas tu asistencia?",
+    "yes": "Sí, asistiré con amor",
+    "no": "No podré asistir, les acompaño en espíritu",
+    "guestsLabel": "Cantidad de personas (incluyéndote)",
+    "messageLabel": "Mensaje especial (opcional)",
+    "messagePlaceholder": "Algún detalle alimentario, bendición o saludo...",
+    "submit": "Enviar Confirmación por WhatsApp",
+    "whatsappTextTemplate": "¡Hola Jason y María! Confirmo mi asistencia a su Unión Matrimonial Chamánica. Nombre: {name}. Asistencia: {attendance}. Mensaje: {message}"
+  }
+}
