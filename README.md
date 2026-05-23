@@ -22,8 +22,8 @@ Una plantilla moderna, inmersiva y de alto rendimiento construida con **Next.js*
 
 1. **Clona el repositorio**
    ```bash
-   git clone https://github.com/tu-usuario/invitacion-chamanica.git
-   cd invitacion-chamanica
+   git clone https://github.com/tu-usuario/invitacion-boda.git
+   cd invitacion-boda
    ```
 
 2. **Instala las dependencias**
